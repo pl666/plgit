@@ -1,0 +1,26 @@
+
+<view class="R">
+  <label>我的地址</label>
+    <view bindtap='choseAdd'>{{address}}</view>
+</view>
+
+<!-- 类型 -->
+<view class="R">
+ <view>
+  {{type==="buy"?"求购":"转让"}}
+ </view>
+   
+</view>
+
+<!-- 说明 -->
+<view class="R">
+  <label>说明</label>
+  <input placeholder='填写您的具体要求' value='{{dec}}'></input>
+</view>
+
+<!-- 联系方式 -->
+<view class="R">
+  <label>联系方式</label>
+  <input placeholder='填写您的联系方式' value='{{concat}}'></input>
+</view>
+

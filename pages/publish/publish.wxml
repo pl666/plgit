@@ -1,0 +1,37 @@
+<view wx:if="{{!suc}}">
+<view class="R">
+  <label>我的地址</label>
+    <view bindtap='choseAdd'>{{address}}</view>
+</view>
+
+<!-- 类型 -->
+<view class="R">
+  <label>类型</label>
+      <!-- 单选按钮 -->
+    <radio-group class="radio-group" bindchange="typeChange">
+      <radio value="buy" />求购
+      <radio value="sell" checked="true"/>转让
+  </radio-group>
+</view>
+
+<!-- 说明 -->
+<view class="R">
+  <label>说明</label>
+  <input placeholder='填写您的具体要求' bindinput='inputdec'></input>
+</view>
+
+<!-- 联系方式 -->
+<view class="R">
+  <label>联系方式</label>
+  <input placeholder='填写您的联系方式' bindinput='inputconcat'></input>
+</view>
+
+<view>
+  <button bindtap='save'>发布信息</button>
+</view>
+</view>
+
+<view wx:if="{{suc}}">
+   <icon type="success" size="20" />发布成功
+   <button bindtap='go'>返回首页</button>
+</view>

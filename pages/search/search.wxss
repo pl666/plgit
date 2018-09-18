@@ -1,0 +1,19 @@
+
+.search{
+  background: #03bbd5;
+  position: relative;
+  display: flex;
+}
+.search input{
+  background: #fff;
+  width:80%;
+  border-radius: 10rpx;
+  margin:5rpx 30rpx 10rpx 10rpx;
+  height: 80rpx;
+}
+.search button{
+  width:18%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin:5rpx 10rpx 15rpx 0;
+}
